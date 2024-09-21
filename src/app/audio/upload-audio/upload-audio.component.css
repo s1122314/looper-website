@@ -1,0 +1,15 @@
+/* Add this to your styles */
+.with-green-line {
+    position: relative;
+  }
+  
+  .with-green-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust this value to control the distance of the line from the text */
+    width: 1%; /* Adjust this value to control the length of the line */
+    height: 2px; /* Adjust this value to control the thickness of the line */
+    background-color: #4CAF50; /* Green color */
+    display: block;
+  }

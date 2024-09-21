@@ -1,0 +1,12 @@
+@media (max-width: 509px) {
+
+    .bg-gradient-to-r {
+      padding: 8px 12px;
+      font-size: 14px; 
+    }
+  
+    .text-xl {
+      font-size: 14px; 
+      padding: 4px 8px; 
+    }
+  }

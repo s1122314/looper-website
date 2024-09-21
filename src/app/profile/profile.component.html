@@ -1,0 +1,35 @@
+<section class="container mx-auto my-8 bg-secondary p-6 rounded-lg shadow-lg max-w-[60%]">
+     <!-- Profile Picture -->
+     <div *ngFor="let userModel of users" class="flex items-center justify-center mb-6">
+        <div class="material-symbols-outlined w-16 h-16 rounded-full border-4 border-green-400 flex items-center justify-center">
+          <span class="material-icons">person</span>
+        </div>
+      </div>
+    <div class="text-center mb-6">
+      <h1 class="font-bold text-3xl mb-2">Welcome, {{ user?.name }}</h1>
+      <div class="border-b border-green-400 mb-4"></div>
+      <p class="text-green-400">Profile Information</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="mb-4">
+        <h2 class="font-bold text-xl mb-2">Age <span class="material-icons text-green-400">cake</span></h2>
+        <p>{{ user?.age }} years old</p>
+      </div>
+      <div class="mb-4">
+        <h2 class="font-bold text-xl mb-2">Email <span class="material-icons text-green-400">email</span></h2>
+        <p>{{ user?.email }}</p>
+      </div>
+      <div class="mb-4">
+        <h2 class="font-bold text-xl mb-2">Phone <span class="material-icons text-green-400">phone</span></h2>
+        <p>{{ user?.phoneNumber }}</p>
+      </div>
+      <div class="mb-4">
+        <h2 class="font-bold text-xl mb-2">Instagram <span class="material-icons text-green-400">photo_camera</span></h2>
+        <p>{{ user?.instagram }}</p>
+      </div>
+      <div class="mb-4">
+        <h2 class="font-bold text-xl mb-2">Spotify <span class="material-icons text-green-400">music_note</span></h2>
+        <p>{{ user?.spotify }}</p>
+      </div>
+    </div>
+  </section>

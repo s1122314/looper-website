@@ -1,0 +1,10 @@
+
+
+.grid {
+    grid-template-columns: 1fr; 
+  }
+  
+
+  .grid a {
+    width: 100%; 
+  }
